@@ -1,4 +1,3 @@
-<h1>Welcome to SvelteKit</h1>
-<p>
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<main class="bg-black w-[100vw] h-[100vh] text-green-600 font-bold text-4xl">
+    On the Box
+</main>
