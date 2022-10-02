@@ -4,7 +4,7 @@ publish(
 	'build',
 	{
 		branch: 'gh-pages',
-		repo: 'https://https://github.com/ontheboxtf2/ontheboxtf2.github.io.git',
+		repo: 'https://github.com/ontheboxtf2/ontheboxtf2.github.io.git',
 		user: {
 		name: 'ontheboxtf2',
 			email: 'nablamario@proton.me'
