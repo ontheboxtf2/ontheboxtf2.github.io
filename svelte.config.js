@@ -16,10 +16,9 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			fallback: null,
-		    precompress: false
 		}),
 		paths: {
-		    base: dev ? '' : '/your-repo-name',
+		    base: dev ? '' : '/ontheboxtf2',
 		},
 		appDir: 'internal',
     },
