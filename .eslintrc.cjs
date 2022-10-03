@@ -10,12 +10,7 @@ module.exports = {
         'plugin:svelte/recommended',
         'plugin:compat/recommended',
     ],
-    plugins: [
-        'compat',
-        'prefer-arrow',
-        '@typescript-eslint',
-        'functional',
-    ],
+    plugins: ['compat', 'prefer-arrow', '@typescript-eslint', 'functional'],
     rules: {
         '@typescript-eslint/no-unused-vars': [
             'warn',
