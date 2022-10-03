@@ -9,15 +9,12 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:svelte/recommended',
         'plugin:compat/recommended',
-        'plugin:effector/recommended',
-        'plugin:effector/scope',
     ],
     plugins: [
         'compat',
         'prefer-arrow',
         '@typescript-eslint',
         'functional',
-        'effector',
     ],
     rules: {
         '@typescript-eslint/no-unused-vars': [
@@ -90,7 +87,6 @@ module.exports = {
         'unicorn/prevent-abbreviations': 'off',
         'unicorn/no-useless-undefined': 'off', // Doesnt play nice with TypeScript required parameters that
         'unicorn/new-for-builtins': 'off', // Conflicts with unicorn's own rule. Would rather never use new anyways (it's just noise).
-        'effector/enforce-store-naming-convention': 'off', // This isn't compatible svelte.
         'no-loss-of-precision': 'off',
         'object-shorthand': ['warn', 'properties'],
         'no-mixed-spaces-and-tabs': 'off', // Conflicts with prettier.
