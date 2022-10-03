@@ -9,7 +9,7 @@
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "prettier --plugin-search-dir . --check . && eslint .",
-        "format": "prettier --write './src/**/*.{js,jsx,ts,tsx,css,md,json,svelte}' --config ./prettier.config.cjs",
+        "format": "prettier --plugin-search-dir . --write './src/**/*.{js,jsx,ts,tsx,css,md,json,svelte}'",
         "deploy": "node ./gh-pages.js"
     },
     "devDependencies": {

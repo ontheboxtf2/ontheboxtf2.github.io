@@ -1,3 +1,3 @@
-<main class="bg-black w-[100vw] h-[100vh] text-green-600 font-bold text-4xl">
-On the Box
+<main class="h-[100vh] w-[100vw] bg-black text-4xl font-bold text-green-600">
+    On the Box
 </main>
