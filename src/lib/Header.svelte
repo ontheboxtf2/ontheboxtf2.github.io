@@ -3,8 +3,22 @@
     import clsx from 'clsx'
     import HeaderButton from './HeaderButton.svelte'
     import ButtonOutline from './ButtonOutline.svelte'
+    import { onMount } from 'svelte'
+    import { localStore } from './local-store'
+    import { installed } from './installed'
 
     const scrolled = useScrolled()
+
+    let installable = true
+    onMount(() => {
+        const installedSync = localStore(installed, 'installed')
+
+        return installedSync.subscribe((inst) => {
+            if (inst) {
+                installable = false
+            }
+        })
+    })
 </script>
 
 <nav
@@ -15,16 +29,26 @@
     <a
         href="/"
         class={clsx(
-            'mr-auto flex cursor-pointer items-center gap-3 bg-green-600 px-3 py-0.5 transition-colors duration-500 hover:bg-green-500',
+            'relative mr-auto flex cursor-pointer items-center gap-3 bg-green-600 px-3 py-0.5 transition-colors duration-500 hover:bg-green-500',
             $scrolled ? 'text-[rgb(6,46,21)]' : 'text-black'
         )}>
         <div class="mt-px -mb-px text-2xl font-bold tracking-tighter">
             On the Box
+        </div>
+        <div
+            class="absolute -right-12 top-0 mb-auto bg-green-600 px-1.5 text-xs font-bold tracking-tight">
+            BETA
         </div>
     </a>
     <div class="hidden md:contents">
         <HeaderButton>Examples</HeaderButton>
         <HeaderButton>Comparisons</HeaderButton>
     </div>
-    <ButtonOutline size="sm">Install</ButtonOutline>
+    {#if installable}
+        <ButtonOutline size="sm">Install</ButtonOutline>
+    {:else}
+        <a href="steam://connect/dm1.sappho.io:27315">
+            <ButtonOutline size="sm">Launch</ButtonOutline>
+        </a>
+    {/if}
 </nav>
