@@ -33,7 +33,7 @@
 <Header />
 <main
     class="flex min-h-[calc(100vh-4rem)] w-[100vw] flex-col gap-20 bg-black px-8 pb-6 pt-12 text-green-600 md:gap-36">
-    <div class="flex flex-col items-center">
+    <div class="mt-32 flex flex-col items-center">
         <div class="text-lg">Want to be on top? Get</div>
         <div
             class="bg-green-600 px-4 text-[2.75rem] font-bold tracking-tighter text-black">
@@ -98,7 +98,7 @@
             </div>
             <div class="md:col-start-2">
                 "I'm new to competitive and <strong>On The Box</strong> has allowed
-                me to jump straight in with the best" - ***endlynoodles
+                me to jump straight in with the best." - ***endlynoodles
             </div>
             <div class="md:col-start-2">
                 "I only play casual, but I've been having a lot more fun since I
@@ -109,6 +109,11 @@
             <div class="md:col-start-2">
                 "I only play bball these days and I gotta tell ya my rockets are
                 CRISP when I'm #onthebox." - ***ketball.barry.99
+            </div>
+            <div class="md:col-start-2">
+                "I don't really have as much time to play anymore, but <strong
+                    >On The Box</strong> helps me stay on top when I get the chance
+                to game." - ***liblegoobular
             </div>
         </div>
     </div>
