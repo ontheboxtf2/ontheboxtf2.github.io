@@ -55,7 +55,7 @@
     <div
         class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:place-items-center">
         <div class="text-xl">
-            <div class="mb-2 text-2xl font-bold">
+            <div class="mb-4 text-2xl font-bold">
                 What can The Box do for you?
             </div>
             <div class="grid grid-cols-[auto_1fr] items-center gap-2">
@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="text-xl">
-            <div class="mb-2 text-2xl font-bold">The Box is unbeatable</div>
+            <div class="mb-4 text-2xl font-bold">The Box is unbeatable</div>
             <div class="grid grid-cols-[auto_1fr] items-center gap-2">
                 <FontAwesomeIcon icon={faMicrochip} fixedWidth />
                 <div>Lower RAM usage than LmaoBox</div>
@@ -129,13 +129,15 @@
     <div
         class="relative grid grid-cols-1 items-center gap-y-10 md:grid-cols-2 md:place-items-center">
         <div class="absolute -top-32" id="features" />
-        <div class="mb-4 text-4xl font-bold md:col-span-2 md:mb-12">
+        <div
+            class="mb-4 bg-green-600 py-1 px-4 text-4xl font-bold text-black md:col-span-2 md:mb-12">
             Features
         </div>
         <div>
             <div class="text-2xl font-bold">Compatilibity?</div>
             <div class="mb-2 text-sm">We do it all.</div>
-            <div class="grid grid-cols-[auto_1fr] items-center gap-2 text-xl">
+            <div
+                class="my-6 grid grid-cols-[auto_1fr] items-center gap-2 text-xl">
                 <FontAwesomeIcon icon={faCrosshairs} fixedWidth />
                 <div>Casual</div>
                 <FontAwesomeIcon icon={faCrosshairs} fixedWidth />
@@ -151,7 +153,8 @@
         <div>
             <div class="text-2xl font-bold">Level up your brain</div>
             <div class="mb-2 text-sm">It's not all about mechies. Get our</div>
-            <div class="grid grid-cols-[auto_1fr] items-center gap-2 text-xl">
+            <div
+                class="my-6 grid grid-cols-[auto_1fr] items-center gap-2 text-xl">
                 <FontAwesomeIcon icon={faGraduationCap} fixedWidth />
                 <div>Training courses</div>
                 <FontAwesomeIcon icon={faArrowsTurnToDots} fixedWidth />
@@ -160,9 +163,9 @@
                 <div>Tips and tricks</div>
                 <FontAwesomeIcon icon={faDraftingCompass} fixedWidth />
                 <div>Groundbreaking theorycrafting</div>
-            </div>
-            <div class="mt-2 text-xl">
-                From <strong>real</strong> pros. All 100% free.
+                <div class="col-span-2">
+                    From <strong>real</strong> pros. All 100% free.
+                </div>
             </div>
         </div>
         <div class="mx-auto mt-16 mb-14 text-3xl font-bold md:col-span-2">
