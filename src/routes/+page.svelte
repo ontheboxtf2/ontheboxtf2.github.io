@@ -5,7 +5,7 @@
     import {
         faAngleRight,
         faArrowsTurnToDots,
-        faBoxOpen,
+        // faBoxOpen,
         faChalkboard,
         faCrosshairs,
         faDraftingCompass,
@@ -17,6 +17,7 @@
     import { onMount } from 'svelte'
     import { localStore } from '$lib/local-store'
     import { installed } from '$lib/installed'
+    import Quote from '$lib/Quote.svelte'
 
     let installable = true
     onMount(() => {
@@ -33,7 +34,7 @@
 <Header />
 <main
     class="flex min-h-[calc(100vh-4rem)] w-[100vw] flex-col gap-20 bg-black px-8 pb-6 pt-12 text-green-600 md:gap-36">
-    <div class="mt-32 flex flex-col items-center">
+    <div class="mt-36 flex flex-col items-center">
         <div class="text-lg">Want to be on top? Get</div>
         <div
             class="bg-green-600 px-4 text-[2.75rem] font-bold tracking-tighter text-black">
@@ -41,7 +42,7 @@
         </div>
         <div class="mt-4 text-base">A gateway to wild skill in TF2.</div>
     </div>
-    <div class="mx-auto -mt-6 flex w-72 flex-col items-center md:-mt-8">
+    <div class="mx-auto flex w-72 flex-col items-center">
         Change the game
         {#if installable}
             <a href="/app"><ButtonOutline>Install Now</ButtonOutline></a>
@@ -77,48 +78,60 @@
                 <div>VAC Immune</div>
             </div>
         </div>
-        <div class="mx-auto mt-4 mb-2 text-3xl font-bold md:col-span-2">
+        <div class="mx-auto mt-16 mb-14 text-3xl font-bold md:col-span-2">
             100% free forever
         </div>
         <div class="mx-auto md:col-span-2">
-            <ButtonOutline>See More</ButtonOutline>
+            <a href="#testimonials"><ButtonOutline>See More</ButtonOutline></a>
         </div>
     </div>
-    <div class="-mx-8 bg-green-900/20 py-16 px-8">
-        <div
-            class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:place-items-center">
+    <div class="-mx-8 bg-green-900/20 py-28 md:px-8" id="testimonials">
+        <div class="mx-8 flex flex-col gap-12 md:mx-16">
             <div>
-                <div class="text-2xl">Testimonials</div>
+                <div class="text-3xl font-bold">Testimonials</div>
                 <div class="text-xs">Identities hidden for privacy</div>
             </div>
-            <div class="md:col-start-2">
-                "I was nervous heading to LAN, but with <strong
+            <Quote
+                name="**ile"
+                avatarUrl="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/01/01cded8bb4c8ba9976ea0905611c6d74f4a01b49_medium.jpg">
+                I was nervous heading to LAN, but with <strong
                     >On The Box</strong
-                >, I was able to perform better than ever." - **ile
-            </div>
-            <div class="md:col-start-2">
-                "I'm new to competitive and <strong>On The Box</strong> has allowed
-                me to jump straight in with the best." - ***endlynoodles
-            </div>
-            <div class="md:col-start-2">
-                "I only play casual, but I've been having a lot more fun since I
+                >, I was able to perform better than ever.
+            </Quote>
+            <Quote
+                name="***endlynoodles"
+                avatarUrl="https://avatars.akamai.steamstatic.com/87f0d37e3af4ef132bfcff6636c69335fddf6170_full.jpg">
+                I'm new to competitive and <strong>On The Box</strong> has allowed
+                me to jump straight in with the best.
+            </Quote>
+            <Quote
+                name="***ditforlife"
+                avatarUrl="https://avatars.akamai.steamstatic.com/cd78b56fcb7cc9f74ae30b5b2add073f87bf7fdb.jpg">
+                I only play casual, but I've been having a lot more fun since I
                 picked up <strong>On The Box</strong>. Now I always make it fat
-                like my favorite streamer and I always end on a W." -
-                ***ditforlife
-            </div>
-            <div class="md:col-start-2">
-                "I only play bball these days and I gotta tell ya my rockets are
-                CRISP when I'm #onthebox." - ***ketball.barry.99
-            </div>
-            <div class="md:col-start-2">
-                "I don't really have as much time to play anymore, but <strong
+                like my favorite streamer and I always end on a W.
+            </Quote>
+            <Quote
+                name="***ketball.barry.99"
+                avatarUrl="https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png">
+                I only play bball these days and I gotta tell ya my rockets are
+                CRISP when I'm #onthebox.
+            </Quote>
+            <Quote
+                name="***liblegoobular"
+                avatarUrl="https://avatars.akamai.steamstatic.com/152b2eeea37c59033661471b0f817c63bce545d6_full.jpg">
+                I don't really have as much time to play anymore, but <strong
                     >On The Box</strong> helps me stay on top when I get the chance
-                to game." - ***liblegoobular
-            </div>
+                to game.
+            </Quote>
         </div>
     </div>
     <div
-        class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:place-items-center">
+        class="relative grid grid-cols-1 items-center gap-y-10 md:grid-cols-2 md:place-items-center">
+        <div class="absolute -top-32" id="features" />
+        <div class="mb-4 text-4xl font-bold md:col-span-2 md:mb-12">
+            Features
+        </div>
         <div>
             <div class="text-2xl font-bold">Compatilibity?</div>
             <div class="mb-2 text-sm">We do it all.</div>
@@ -152,29 +165,28 @@
                 From <strong>real</strong> pros. All 100% free.
             </div>
         </div>
-        <div class="mx-auto mt-6 -mb-4 text-5xl md:col-span-2">
-            <FontAwesomeIcon icon={faBoxOpen} />
+        <div class="mx-auto mt-16 mb-14 text-3xl font-bold md:col-span-2">
+            <!-- <FontAwesomeIcon icon={faBoxOpen} />  -->
+            Can't get it anywhere else
         </div>
         <div class="mx-auto md:col-span-2">
-            <ButtonOutline>Get it</ButtonOutline>
+            <a href="/app"><ButtonOutline>Get it</ButtonOutline></a>
         </div>
     </div>
-    <div class="-mx-8 bg-green-900/20 py-16 px-8">
-        <div
-            class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:place-items-center">
+    <div class="-mx-8 bg-green-900/20 py-28 px-8">
+        <div class="flex flex-col gap-8 md:mx-16">
             <div>
-                <div class="text-2xl">Results</div>
+                <div class="text-3xl font-bold">Results</div>
                 <div class="text-sm">The proof is in the pudding</div>
             </div>
-            <div class="md:col-start-2">
-                <iframe
-                    src="https://www.youtube.com/embed/9NZDwZbyD23us"
-                    title="The Pudding"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    class="aspect-[2.34] h-60 max-w-full"
-                    allowfullscreen />
-            </div>
+            <iframe
+                src="https://www.youtube.com/embed/NOLB3jQT-Gk"
+                title="Box Results"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                class="aspect-video max-w-full"
+                loading="lazy"
+                allowfullscreen />
         </div>
     </div>
     <div class="mt-auto max-w-lg text-xs">

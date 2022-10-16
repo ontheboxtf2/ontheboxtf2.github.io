@@ -41,11 +41,15 @@
         </div>
     </a>
     <div class="hidden md:contents">
-        <HeaderButton>Examples</HeaderButton>
-        <HeaderButton>Comparisons</HeaderButton>
+        <a href="/#testimonials">
+            <HeaderButton>Testimonials</HeaderButton>
+        </a>
+        <a href="/#features">
+            <HeaderButton>Features</HeaderButton>
+        </a>
     </div>
     {#if installable}
-        <ButtonOutline size="sm">Install</ButtonOutline>
+        <a href="/app"><ButtonOutline size="sm">Install</ButtonOutline></a>
     {:else}
         <a href="steam://connect/dm1.sappho.io:27315">
             <ButtonOutline size="sm">Launch</ButtonOutline>
