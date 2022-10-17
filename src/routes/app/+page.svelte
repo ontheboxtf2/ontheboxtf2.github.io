@@ -1,10 +1,10 @@
 <script>
-    import ButtonOutline from '$lib/ButtonOutline.svelte'
     import Header from '$lib/Header.svelte'
     import { onMount } from 'svelte'
     import { spring } from 'svelte/motion'
     import { installed } from '$lib/installed'
     import { localStore } from '$lib/local-store'
+    import CommandCenter from '$lib/CommandCenter.svelte'
 
     onMount(() => {
         const installedSync = localStore(installed, 'installed')
@@ -38,14 +38,11 @@
 
 <Header />
 <main
-    class="flex min-h-[calc(100vh-4rem)] w-[100vw] flex-col items-center justify-center gap-20 bg-black px-8 pb-6 pt-12 text-green-600 md:gap-36">
-    <div class="flex flex-col items-center gap-6">
-        {#if ready}
-            <div class="text-3xl">Ready. Get gaming.</div>
-            <a href="steam://connect/dm1.sappho.io:27315">
-                <ButtonOutline>Launch</ButtonOutline>
-            </a>
-        {:else}
+    class="grid h-[calc(100vh-4rem)] w-[100vw] gap-20 bg-black pb-6 pt-4 text-green-600 md:gap-36">
+    {#if ready}
+        <CommandCenter />
+    {:else}
+        <div class="mx-auto my-auto flex flex-col items-center gap-6">
             <div class="text-3xl">Installing...</div>
             <div class="flex gap-4 text-3xl">
                 <div class="h-10 w-60 ring-2 ring-green-600">
@@ -55,6 +52,6 @@
                 </div>
                 {$percent.toFixed(0)}%
             </div>
-        {/if}
-    </div>
+        </div>
+    {/if}
 </main>

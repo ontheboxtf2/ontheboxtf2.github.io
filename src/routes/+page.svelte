@@ -47,8 +47,8 @@
         {#if installable}
             <a href="/app"><ButtonOutline>Install Now</ButtonOutline></a>
         {:else}
-            <a href="steam://connect/dm1.sappho.io:27315">
-                <ButtonOutline>Launch</ButtonOutline>
+            <a href="/app">
+                <ButtonOutline>Boot the Box</ButtonOutline>
             </a>
         {/if}
     </div>
