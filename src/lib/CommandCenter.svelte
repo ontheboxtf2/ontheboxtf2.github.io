@@ -63,7 +63,7 @@
                 </Content>
                 <Content title="Movement Boost" author="**ic7">
                     <a href="steam://connect/dm1.sappho.io:27315">
-                        <ButtonOutline>Launch Movement Mods</ButtonOutline>
+                        <ButtonOutline>Launch Movement Boost</ButtonOutline>
                     </a>
                 </Content>
                 <Content title="Radical Rockets" author="***cketier99">
