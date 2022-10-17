@@ -112,7 +112,7 @@
                     As pocket soldier, bomb when you see your roaming soldier on
                     the right side of the kill feed.
                 </Content>
-                <Content title="50 Into Direct = Drop" author="*armaloo">
+                <Content title="50 Into Direct = Drop" author="marmal**">
                     When sacking, barely hit your first rocket so their medic
                     gets a crappy surf and doesn't go anywhere. They'll be
                     feeling comfy at ~102 hp. Hit them with a direct for a
