@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-357a79d4.js",
+    "file": "_app/immutable/start-2f6b62ae.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-ad6d34c5.js",
-      "_singletons-a5fda0e2.js"
+      "_singletons-95c92118.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -26,12 +26,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-12321c43.js",
+    "file": "_app/immutable/components/error.svelte-e8b502f2.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-ad6d34c5.js",
-      "_singletons-a5fda0e2.js"
+      "_singletons-95c92118.js"
     ]
   },
   "src/routes/+page.svelte": {
@@ -44,7 +44,7 @@
     ]
   },
   "src/routes/app/+page.svelte": {
-    "file": "_app/immutable/components/pages/app/_page.svelte-6cb2f7a0.js",
+    "file": "_app/immutable/components/pages/app/_page.svelte-eb4102b2.js",
     "src": "src/routes/app/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -61,8 +61,8 @@
       "__layout-1daba58d.js"
     ]
   },
-  "_singletons-a5fda0e2.js": {
-    "file": "_app/immutable/chunks/singletons-a5fda0e2.js",
+  "_singletons-95c92118.js": {
+    "file": "_app/immutable/chunks/singletons-95c92118.js",
     "imports": [
       "_index-2658db0b.js"
     ]
@@ -99,7 +99,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-8a7b2673.js",
+    "file": "_app/immutable/chunks/1-ad6c6fd6.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -115,7 +115,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-2e2c3097.js",
+    "file": "_app/immutable/chunks/3-cd59484c.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [

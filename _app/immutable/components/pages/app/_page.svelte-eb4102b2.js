@@ -58,11 +58,11 @@ import{Q as re,R as me,S as te,i as se,s as ne,E as ce,k as w,q as R,a as I,l as
                     Pocket jumps through choke and wallbugs against the barrier performing
                     the "stick." Roamer performs the "sack" and bombs from valley
                     while enemy team is all looking at the soldier in choke's hilarious
-                    "blunder", dropping the med.`),this.h()},l(r){e=v(r,"IMG",{src:!0,alt:!0,class:!0}),s=V(r,`
+                    "blunder," dropping the med.`),this.h()},l(r){e=v(r,"IMG",{src:!0,alt:!0,class:!0}),s=V(r,`
                     Pocket jumps through choke and wallbugs against the barrier performing
                     the "stick." Roamer performs the "sack" and bombs from valley
                     while enemy team is all looking at the soldier in choke's hilarious
-                    "blunder", dropping the med.`),this.h()},h(){U(e.src,t="./stickandsack.png")||g(e,"src",t),g(e,"alt","Stick and Sack"),g(e,"class","max-w-md")},m(r,n){h(r,e,n),h(r,s,n)},p:C,d(r){r&&f(e),r&&f(s)}}}function Ne(a){let e;return{c(){e=R(`Engie builds box. Engie picks up box. Engie walks down ramp.
+                    "blunder," dropping the med.`),this.h()},h(){U(e.src,t="./stickandsack.png")||g(e,"src",t),g(e,"alt","Stick and Sack"),g(e,"class","max-w-md")},m(r,n){h(r,e,n),h(r,s,n)},p:C,d(r){r&&f(e),r&&f(s)}}}function Ne(a){let e;return{c(){e=R(`Engie builds box. Engie picks up box. Engie walks down ramp.
                     Team pushes while engie distracts.`)},l(t){e=V(t,`Engie builds box. Engie picks up box. Engie walks down ramp.
                     Team pushes while engie distracts.`)},m(t,s){h(t,e,s)},d(t){t&&f(e)}}}function Ye(a){let e;return{c(){e=R(`Buff up teammates. Flank scout runs in and blows up. Roamer
                     runs in and blows up. Demo double sticky sacks (missing 3/4
